@@ -27,9 +27,13 @@
     font-weight: normal;
     font-style: normal;
 }
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: var(--fonte-padrao);
-    background-color: var(--cor1); 
+    background-color: var(--cor1);
     
 }
 main.principal {
@@ -71,47 +75,49 @@ div.video > iframe {
     height: 90%;
 }
 
-header.cabecalho {
-    background-image: linear-gradient(to bottom, var(--cor2)  , var(--cor4) , rgba(0, 0, 0, 0.644));
-    height: 190px;
-    margin: -8px -8px 0px -8px;
-    
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
+
+.cabeca {
+    font-family: 'cabeca', Times, serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+    color: white;
+}
+
+.cab {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;;
+    color: white;
+    margin: auto;
+    padding: 0px 10px 50px 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}
+
 nav {
-    padding-left: 15px;
-    padding-bottom: 10px;
-    padding-top: 14px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205);
 }
 nav > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-right: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    transition-duration: 0.5s;
+    color: var(--cor1);
     padding: 10px;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
 }
 
 nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
-    
 
-}
-.cabeca {
-    font-family: 'cabeca', Times, serif;
-    font-size: 46px;
-    font-weight: normal;
-    text-align: center;
-    margin-top: -8px;
-    padding-top: 20px;
-    margin-bottom: -15px;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
-    color: white;
 }
 .subtitulo {
     font-family: 'idroid', Times, serif;
@@ -144,7 +150,7 @@ p {
     color: white;
     border: black;
     padding-bottom: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
 }
 h2 {
@@ -199,6 +205,6 @@ abbr {
 footer {
     background-color: var(--cor4);
     text-align: center;
-    margin: 0px -8px -8px -8px;
+    margin: 0px 0px -8px -8px;
     padding-top: 5px;
 }
